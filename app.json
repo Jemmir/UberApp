@@ -18,12 +18,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "UberApp",
+      "config":{
+        "googleMapsApiKey": "AIzaSyAXk7O4sijhPud7ejBlmC_SorLrvp3YDm4"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
+      },
+      "package":"UberApp",
+      "config":{
+        "googleMaps":{
+          "apiKey":"AIzaSyAXk7O4sijhPud7ejBlmC_SorLrvp3YDm4"
+        },
+        "permissions":["ACCESS_COARSE_LOCATION", "ACCESS_FINE_LOCATION", "FOREGROUND_SERVICE"]
       }
     },
     "web": {
